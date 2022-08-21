@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    background: url(./iron-man-snap-i5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    font-size: 12vw;
+    line-height: 1em;
+    font-weight: 800;
+    color: #000;
+    text-transform: uppercase;
+}
+
+i{
+    position: absolute;
+    display: block;
+    background: #000;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(calc(100vh + 350px));
+    }
+    100%{
+        transform: translateY(-250px);
+    }
+}
+
+i:nth-child(5n + 1){
+    background: rgb(193, 193, 193);
+}
+i:nth-child(5n + 2){
+    background: #aa0505;
+}
+i:nth-child(5n + 3){
+    background: #fff;
+    border: 5px solid #aa0505
+}
+i:nth-child(5n + 4){
+    background: #fbca03;
+}
+i:nth-child(5n + 5){
+    background: #fff;
+    border: 5px solid #fbca03
+}
